@@ -1,16 +1,16 @@
 /* SEARCH BOX STYLE */
 .searchBox {
-    @apply w-full mb-6 md:mb-0 md:w-fit shadow-md  p-3 rounded flex md:justify-center;
+    @apply w-full mb-6 md:mb-0 md:w-fit shadow-md  p-3 rounded flex md:justify-center dark:shadow-slate-600;
 }
 
 /* SEARCH BOX ICON */
 .searchBox i {
-    @apply text-gray-700 mr-2;
+    @apply text-gray-700 mr-2 dark:text-gray-300;
 }
 
 /*SEARCH BOX INPUT*/
 .searchBox input {
-    @apply bg-transparent outline-none border-none text-gray-800  md:w-32;
+    @apply bg-transparent outline-none border-none text-gray-800  md:w-32 dark:text-gray-300 dark:placeholder:text-gray-300;;
     font-size: 1rem;
 }
 
