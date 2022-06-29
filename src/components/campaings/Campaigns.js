@@ -13,7 +13,9 @@ const Campaigns = () => {
         <div className='campaigns'>
             <nav className="campaignsNav">
                 <ul className="campaignsTabs">
-
+                    {
+                        campaignsTabData.map(item => <CampaignsTabItem key={item.id} data={item} setActiveTab={setActiveTab} activeTab={activeTab} />)
+                    }
                 </ul>
             </nav>
         </div>
