@@ -1,6 +1,9 @@
 import React from 'react';
 
-const CampaignsTabItem = () => {
+const CampaignsTabItem = (props) => {
+    const {data,setActiveTab, activeTab} = props;
+    const {title, id, icon} = data;
+
     return (
         <div>
             
