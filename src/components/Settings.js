@@ -4,6 +4,9 @@ import { useState } from "react";
 import SearchBox from "../shared/SearchBox";
 import SearchContent from "../shared/SearchContent";
 
+//STYLES
+import "./Settings.css";
+
 const Settings = () => {
     const [shownContent, setShownContent] = useState("default");
     const [searchContent, setSearchContent] = useState("");
