@@ -2,6 +2,7 @@ import { useState } from "react";
 
 //COMPONENTS
 import SearchBox from "../shared/SearchBox";
+import SearchContent from "../shared/SearchContent";
 
 const Settings = () => {
     const [shownContent, setShownContent] = useState("default");
@@ -12,7 +13,12 @@ const Settings = () => {
             <nav className="settingsNav">
                 <SearchBox setActiveTab={setShownContent} setSearchContent={setSearchContent} />
             </nav>
-            <div className="settingsOutput"></div>
+            <div className="settingsOutput">
+                {
+                    shownContent === "default" ? <p className='settingsTitle'>Settings</p> :
+                        <SearchContent content={searchContent}/>
+                }
+            </div>
         </div>
     );
 };
