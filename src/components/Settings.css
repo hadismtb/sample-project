@@ -7,3 +7,10 @@
 .settingsNav {
     @apply flex justify-end items-center;
 }
+
+/*SETTINGS NAVBAR*/
+.settingsOutput {
+    height: 80%;
+    @apply my-auto flex justify-center items-center;
+    background-color: #028014;
+}
