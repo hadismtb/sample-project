@@ -2,3 +2,8 @@
 .settings {
     @apply h-full flex flex-col justify-between
 }
+
+/*SETTINGS NAVBAR*/
+.settingsNav {
+    @apply flex justify-end items-center;
+}
