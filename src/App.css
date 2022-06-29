@@ -5,3 +5,9 @@
     background-color: #f8f8f8;
     @apply container flex flex-col shadow-2xl lg:flex-row sm:rounded-3xl;
 }
+
+@media (min-width: 1280px) {
+    .app {
+        width: 1280px;
+    }
+}
