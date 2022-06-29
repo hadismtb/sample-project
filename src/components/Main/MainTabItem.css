@@ -8,5 +8,7 @@
     background-color: #6864CF;
     @apply text-white shadow-lg;
 }
-
+.mainTabItem:not(:last-child) {
+    @apply mr-4 lg:mb-4 lg:mr-0
+}
 /* END OF MAIN TAB ITEM STYLE */
