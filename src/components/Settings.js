@@ -2,8 +2,10 @@ import React from 'react';
 
 const Settings = () => {
     return (
-        <div>
-            settings
+        <div className='settings'>
+            <nav className="settingsNav">
+                
+            </nav>
         </div>
     );
 };
