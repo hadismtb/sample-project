@@ -14,7 +14,7 @@ import { mainTabData } from "./data/mainData";
 import "./App.css";
 
 //CONTEXT
-import {ThemeContextProvider} from "./context/ThemeContextProvider";
+import { ThemeContextProvider } from "./context/ThemeContextProvider";
 
 function App() {
     const [activeTab, setActiveTab] = useState("");
