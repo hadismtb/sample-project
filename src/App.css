@@ -6,6 +6,21 @@
     @apply container flex flex-col shadow-2xl lg:flex-row sm:rounded-3xl;
 }
 
+/*MAIN STYLES*/
+.mainTabs {
+    @apply py-4 px-5 flex justify-center items-center md:px-7 lg:px-14 lg:py-14 lg:w-1/4 xl:w-1/5 lg:justify-start lg:flex-col ;
+    border-bottom: 3px solid #ebe9e9;
+}
+/*END OF MAIN STYLES*/
+
+/*MEDIA QUERIES*/
+@media (min-width: 1024px) {
+    .mainTabs {
+        border-right: 3px solid #ebe9e9;
+        border-bottom: none;
+    }
+}
+
 @media (min-width: 1280px) {
     .app {
         width: 1280px;
