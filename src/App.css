@@ -14,6 +14,13 @@
 /*END OF MAIN STYLES*/
 
 /*MEDIA QUERIES*/
+@media (max-width: 640px) {
+    .app {
+        height: 100vh;
+        margin: 0;
+    }
+}
+
 @media (min-width: 1024px) {
     .mainTabs {
         border-right: 3px solid #ebe9e9;
