@@ -9,7 +9,7 @@ const SearchBox = (props) => {
         <div className='searchBox'>
             <form id='search'>
                 <i className="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="search"/>
+                <input type="text" placeholder="search" value={inputValue}/>
             </form>
         </div>
     );
