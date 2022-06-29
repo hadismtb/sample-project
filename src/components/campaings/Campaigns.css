@@ -29,3 +29,10 @@
 .campaignsTabItem img {
     @apply w-5 mr-2
 }
+
+/*CAMPAIGNS OUTPUT STYLE*/
+.campaignsOutput {
+    height: 80%;
+    @apply my-auto;
+    background-color: #1000fa;
+}
