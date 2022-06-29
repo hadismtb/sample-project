@@ -1,12 +1,12 @@
 /* MAIN TAB ITEM STYLE */
 .mainTabItem {
-    @apply flex items-center justify-center p-3 cursor-pointer rounded-lg;
+    @apply flex items-center justify-center p-3 cursor-pointer rounded-lg dark:text-white;
     transition: .5s all;
     width: 130px;
 }
 .mainTabItem:hover, .mainTabItem.active {
     background-color: #6864CF;
-    @apply text-white shadow-lg;
+    @apply text-white shadow-md shadow-gray-400 dark:shadow-gray-500 dark:shadow-md;
 }
 .mainTabItem:not(:last-child) {
     @apply mr-4 lg:mb-4 lg:mr-0
