@@ -21,6 +21,9 @@ const Campaigns = () => {
                 </ul>
                 <SearchBox setActiveTab={setActiveTab} setSearchContent={setSearchContent} />
             </nav>
+            <div className="campaignsOutput">
+                
+            </div>
         </div>
     );
 };
