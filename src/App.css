@@ -1,0 +1,7 @@
+/* APP STYLE */
+.app {
+    height: calc(100vh - 6rem);
+    margin: 3rem auto;
+    background-color: #f8f8f8;
+    @apply container flex flex-col shadow-2xl lg:flex-row sm:rounded-3xl;
+}
