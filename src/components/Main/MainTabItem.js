@@ -1,10 +1,13 @@
 import React from 'react';
 
-const MainTabItem = () => {
+const MainTabItem = (props) => {
+    const {data} = props;
+    const {id, icon, title} = data;
 
     return (
         <li>
-            mainTabItem
+            <i className={icon}></i>
+            {title}
         </li>
     );
 };
