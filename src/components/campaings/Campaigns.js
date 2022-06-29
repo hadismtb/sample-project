@@ -19,7 +19,7 @@ const Campaigns = () => {
                         campaignsTabData.map(item => <CampaignsTabItem key={item.id} data={item} setActiveTab={setActiveTab} activeTab={activeTab} />)
                     }
                 </ul>
-                <SearchBox/>
+                <SearchBox setActiveTab={setActiveTab} setSearchContent={setSearchContent} />
             </nav>
         </div>
     );
