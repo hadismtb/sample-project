@@ -1,0 +1,8 @@
+/* MAIN TAB ITEM STYLE */
+.mainTabItem {
+    @apply flex items-center justify-center p-3 cursor-pointer rounded-lg;
+    transition: .5s all;
+    width: 130px;
+}
+
+/* END OF MAIN TAB ITEM STYLE */
