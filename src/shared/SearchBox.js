@@ -1,7 +1,9 @@
-import React from 'react';
+import { useState } from 'react';
 
 const SearchBox = (props) => {
     const {setActiveTab, setSearchContent} = props;
+
+    const [inputValue, setInputValue] = useState("");
 
     return (
         <div className='searchBox'>
