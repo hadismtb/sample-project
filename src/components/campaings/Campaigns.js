@@ -2,8 +2,8 @@ import React from 'react';
 
 const Campaigns = () => {
     return (
-        <div>
-            campaigns
+        <div className='campaigns'>
+            <nav className="campaignsNav"></nav>
         </div>
     );
 };
