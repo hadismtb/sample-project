@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
         <ul className="mainTabs">
-            <MainTabItem/>
+            {mainTabData.map(item => <MainTabItem key={item.id} data={item} />)}
         </ul>
     </div>
   );
