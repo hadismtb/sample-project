@@ -2,12 +2,15 @@ import { useState } from "react";
 
 //COMPONENTS
 import MainTabItem from "./components/Main/MainTabItem";
-
-//DATA
-import { mainTabData } from "./data/mainData";
 import MainContent from "./components/Main/MainContent";
 import Campaigns from "./components/campaings/Campaigns";
 import Settings from "./components/Settings";
+
+//DATA
+import { mainTabData } from "./data/mainData";
+
+//STYLE
+import "./App.css";
 
 function App() {
     const [activeTab, setActiveTab] = useState("");
