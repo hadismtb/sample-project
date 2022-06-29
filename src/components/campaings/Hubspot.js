@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hubspot = () => {
     return (
-        <div className="container google">
+        <div className="container hubspot">
             Hubspot
         </div>
     );

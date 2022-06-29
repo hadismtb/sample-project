@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pipedrive = () => {
     return (
-        <div className="container google">
+        <div className="container pipedrive">
             Pipedrive
         </div>
     );

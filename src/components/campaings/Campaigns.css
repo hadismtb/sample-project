@@ -41,3 +41,13 @@
 .container {
     @apply h-full flex justify-center items-center
 }
+
+.google {
+    background-color: #fe001b;
+}
+.pipedrive {
+    background-color: #c4c4c4;
+}
+.hubspot {
+    background-color: #fea52a;
+}
