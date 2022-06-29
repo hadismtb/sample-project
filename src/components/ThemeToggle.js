@@ -1,4 +1,6 @@
-import React from 'react';
+//CONTEXT
+import {ThemeContext} from "../context/ThemeContextProvider";
+
 
 const ThemeToggle = () => {
     return (
