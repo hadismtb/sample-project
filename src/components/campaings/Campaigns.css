@@ -51,3 +51,16 @@
 .hubspot {
     background-color: #fea52a;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 370px) {
+    .campaignsTabItem {
+        width: 5.6rem;
+    }
+    .campaignsTabItem img {
+        @apply w-4 mr-1
+    }
+    .campaignsTabItem:not(:last-child) {
+        margin-right: .5rem;
+    }
+}
