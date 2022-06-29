@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
         <ul className="mainTabs">
-            {mainTabData.map(item => <MainTabItem key={item.id} data={item} />)}
+            {mainTabData.map(item => <MainTabItem key={item.id} data={item} activeTab={activeTab} setActiveTab={setActiveTab} />)}
         </ul>
         <div className="mainOutput">
 
