@@ -1,0 +1,47 @@
+import { useState, useEffect, createContext} from 'react';
+
+const getInitialTheme = () => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+        const storedPrefs = window.localStorage.getItem("color-theme");
+        if (typeof storedPrefs === "string") {
+            return storedPrefs
+        }
+
+        const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
+        if (userMedia.matches) {
+            return 'dark'
+        }
+    }
+
+    return 'light'
+}
+
+export const ThemeContext = createContext();
+
+export const ThemeContextProvider = ({children, initialTheme}) => {
+    const [theme, setTheme] = useState(getInitialTheme);
+
+    const switchTheme = (theme) => {
+        const root = window.document.documentElement;
+        const isDark = theme === 'dark';
+
+        root.classList.remove(isDark ? 'dark' : 'light');
+        root.classList.add(theme);
+
+        window.localStorage.setItem('color-theme', theme);
+    }
+
+    if (initialTheme) {
+        setTheme(initialTheme)
+    }
+
+    useEffect(() => {
+        switchTheme(theme)
+    }, [theme,])
+
+    return (
+        <ThemeContext.Provider value={{theme, setTheme}}>
+            {children}
+        </ThemeContext.Provider>
+    );
+};
