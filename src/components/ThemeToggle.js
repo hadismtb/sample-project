@@ -11,8 +11,13 @@ import light from "../assets/images/light.png";
 const ThemeToggle = () => {
     const {theme, setTheme} = useContext(ThemeContext);
 
+    //FUNCTIONS
+    const handleClick = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark')
+    }
+
     return (
-        <div>
+        <div onClick={handleClick}>
             <img src={theme === 'dark' ? dark : light} alt="theme icon"/>
         </div>
     );
