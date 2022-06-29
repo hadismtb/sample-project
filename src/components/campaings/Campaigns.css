@@ -7,3 +7,8 @@
 .campaignsNav {
     @apply flex flex-col-reverse justify-between items-center md:flex-row;
 }
+
+/* CAMPAIGNS TAB */
+.campaignsTabs {
+    @apply flex mb-6 md:mb-0
+}
