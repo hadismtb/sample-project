@@ -2,3 +2,8 @@
 .searchBox {
     @apply w-full mb-6 md:mb-0 md:w-fit shadow-md  p-3 rounded flex md:justify-center;
 }
+
+/* SEARCH BOX ICON */
+.searchBox i {
+    @apply text-gray-700 mr-2;
+}
