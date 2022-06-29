@@ -12,6 +12,7 @@ const Settings = () => {
             <nav className="settingsNav">
                 <SearchBox setActiveTab={setShownContent} setSearchContent={setSearchContent} />
             </nav>
+            <div className="settingsOutput"></div>
         </div>
     );
 };
