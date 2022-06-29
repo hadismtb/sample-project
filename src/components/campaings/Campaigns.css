@@ -25,3 +25,7 @@
 .campaignsTabItem:not(:last-child) {
     @apply mr-5 sm:mr-4
 }
+
+.campaignsTabItem img {
+    @apply w-5 mr-2
+}
