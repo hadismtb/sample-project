@@ -3,7 +3,7 @@
     height: calc(100vh - 6rem);
     margin: 3rem auto;
     background-color: #f8f8f8;
-    @apply container flex flex-col shadow-2xl lg:flex-row sm:rounded-3xl;
+    @apply container flex flex-col shadow-2xl lg:flex-row sm:rounded-3xl dark:bg-gray-800;
 }
 
 /*MAIN STYLES*/
@@ -19,7 +19,7 @@
 
 /*SWITCHER*/
 .switcher {
-    @apply container absolute w-9 h-9  flex justify-center items-center shadow-md rounded-full cursor-pointer right-0 bottom-0  mr-4 mb-4  z-10 bg-white sm:right-8 sm:top-6 md:w-12 md:h-12 transition hover:opacity-90;
+    @apply container absolute w-9 h-9  flex justify-center items-center shadow-md rounded-full cursor-pointer right-0 bottom-0  mr-4 mb-4  z-10 bg-white sm:right-8 sm:top-6 md:w-12 md:h-12 transition hover:opacity-90 dark:shadow-gray-600 dark:bg-gray-800;
 }
 
 /*MEDIA QUERIES*/
