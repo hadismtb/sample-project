@@ -2,3 +2,8 @@
 .campaigns {
     @apply h-full flex flex-col justify-between;
 }
+
+/* CAMPAIGNS NAV */
+.campaignsNav {
+    @apply flex flex-col-reverse justify-between items-center md:flex-row;
+}
