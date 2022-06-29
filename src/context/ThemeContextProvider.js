@@ -25,7 +25,7 @@ export const ThemeContextProvider = ({children, initialTheme}) => {
         const root = window.document.documentElement;
         const isDark = theme === 'dark';
 
-        root.classList.remove(isDark ? 'dark' : 'light');
+        root.classList.remove(isDark ? 'light' : 'dark');
         root.classList.add(theme);
 
         window.localStorage.setItem('color-theme', theme);
@@ -37,7 +37,7 @@ export const ThemeContextProvider = ({children, initialTheme}) => {
 
     useEffect(() => {
         switchTheme(theme)
-    }, [theme,])
+    }, [theme])
 
     return (
         <ThemeContext.Provider value={{theme, setTheme}}>
