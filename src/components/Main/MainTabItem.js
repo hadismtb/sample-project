@@ -9,7 +9,7 @@ const MainTabItem = (props) => {
     }
 
     return (
-        <li onClick={handleClick}>
+        <li className={`mainTabItem ${activeTab === id && "active"}`} onClick={handleClick}>
             <i className={icon}></i>
             {title}
         </li>
