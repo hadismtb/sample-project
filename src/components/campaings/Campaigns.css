@@ -1,0 +1,4 @@
+/* CAMPAIGNS STYlE*/
+.campaigns {
+    @apply h-full flex flex-col justify-between;
+}
