@@ -1,4 +1,5 @@
-import React from 'react';
+// STYLES
+import "./MainTabItem.css";
 
 const MainTabItem = (props) => {
     const {data, activeTab, setActiveTab} = props;
