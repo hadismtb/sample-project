@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 //COMPONENTS
 import MainTabItem from "./components/Main/MainTabItem";
 
@@ -5,6 +7,8 @@ import MainTabItem from "./components/Main/MainTabItem";
 import { mainTabData } from "./data/mainData";
 
 function App() {
+    const [activeTab, setActiveTab] = useState("");
+
   return (
     <div className="app">
         <ul className="mainTabs">
