@@ -36,3 +36,8 @@
     @apply my-auto;
     background-color: #1000fa;
 }
+
+/*CAMPAIGNS TAB ITEMS COMPONENT STYLE*/
+.container {
+    @apply h-full flex justify-center items-center
+}
