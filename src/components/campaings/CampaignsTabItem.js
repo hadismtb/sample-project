@@ -10,7 +10,7 @@ const CampaignsTabItem = (props) => {
     }
 
     return (
-        <li onClick={handleClick} className={`${activeTab === id && "active"} campaginTabItem`}>
+        <li onClick={handleClick} className={`${activeTab === id && "active"} campaignsTabItem`}>
             <img src={icon} alt={title} />
             {title}
         </li>
