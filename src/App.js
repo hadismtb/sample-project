@@ -5,6 +5,7 @@ import MainTabItem from "./components/Main/MainTabItem";
 import MainContent from "./components/Main/MainContent";
 import Campaigns from "./components/campaings/Campaigns";
 import Settings from "./components/Settings";
+import ThemeToggle from "./components/ThemeToggle";
 
 //DATA
 import { mainTabData } from "./data/mainData";
@@ -32,6 +33,9 @@ function App() {
                     <Settings/>
                 </MainContent>
             </div>
+        </div>
+        <div className="switcher">
+            <ThemeToggle/>
         </div>
     </ThemeContextProvider>
   );
