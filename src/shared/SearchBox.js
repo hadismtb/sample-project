@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+//STYLES
+import "./SearchBox.css";
+
 const SearchBox = (props) => {
     const {setActiveTab, setSearchContent} = props;
 
