@@ -1,6 +1,8 @@
 function App() {
   return (
-    <div>app</div>
+    <div className="app">
+      <ul className="mainTabs"></ul>
+    </div>
   );
 }
 
