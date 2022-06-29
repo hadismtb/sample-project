@@ -9,6 +9,7 @@ import SearchBox from "../../shared/SearchBox";
 
 const Campaigns = () => {
     const [activeTab, setActiveTab] = useState("");
+    const [searchContent, setSearchContent] = useState("");
 
     return (
         <div className='campaigns'>
