@@ -12,6 +12,9 @@ import Google from "./Google";
 import Pipedrive from "./Pipedrive";
 import SearchContent from "../../shared/SearchContent";
 
+//STYLES
+import "./Campaigns.css";
+
 const Campaigns = () => {
     const [activeTab, setActiveTab] = useState("");
     const [searchContent, setSearchContent] = useState("");
