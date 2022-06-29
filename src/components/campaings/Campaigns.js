@@ -10,6 +10,7 @@ import CampaignsContent from "./CampaignsContent";
 import Hubspot from "./Hubspot";
 import Google from "./Google";
 import Pipedrive from "./Pipedrive";
+import SearchContent from "../../shared/SearchContent";
 
 const Campaigns = () => {
     const [activeTab, setActiveTab] = useState("");
@@ -35,6 +36,7 @@ const Campaigns = () => {
                 <CampaignsContent id="pipedrive" activeTab={activeTab}>
                     <Pipedrive />
                 </CampaignsContent>
+                {activeTab === "search" && <SearchContent content={searchContent}/>}
             </div>
         </div>
     );
