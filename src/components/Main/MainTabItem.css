@@ -12,3 +12,9 @@
     @apply mr-4 lg:mb-4 lg:mr-0
 }
 /* END OF MAIN TAB ITEM STYLE */
+
+/* MAIN TAB ITEM ICON */
+.mainTabItem i {
+    @apply mr-2
+}
+/* END OF MAIN TAB ITEM ICON */
