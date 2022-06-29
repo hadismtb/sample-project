@@ -15,9 +15,20 @@ const SearchBox = (props) => {
         }
     }
 
+    const handleSubmit = e => {
+        const target = e.target;
+        console.log(inputValue)
+        e.preventDefault();
+        if(inputValue.trim()) {
+            setActiveTab(target.id);
+            setSearchContent(inputValue);
+        }
+        setInputValue("");
+    }
+
     return (
         <div className='searchBox'>
-            <form id='search'>
+            <form id='search' onSubmit={handleSubmit}>
                 <i className="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="search" value={inputValue} onChange={handleChange}/>
             </form>
