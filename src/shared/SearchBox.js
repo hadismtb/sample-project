@@ -1,6 +1,8 @@
 import React from 'react';
 
-const SearchBox = () => {
+const SearchBox = (props) => {
+    const {setActiveTab, setSearchContent} = props;
+
     return (
         <div className='searchBox'>
             <form id='search'>
