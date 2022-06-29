@@ -11,7 +11,7 @@ function App() {
             {mainTabData.map(item => <MainTabItem key={item.id} data={item} />)}
         </ul>
         <div className="mainOutput">
-            
+
         </div>
     </div>
   );
