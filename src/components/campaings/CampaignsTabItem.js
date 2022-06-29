@@ -5,9 +5,10 @@ const CampaignsTabItem = (props) => {
     const {title, id, icon} = data;
 
     return (
-        <div>
-            
-        </div>
+        <li>
+            <img src={icon} alt={title} />
+            {title}
+        </li>
     );
 };
 
